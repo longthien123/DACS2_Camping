@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^trang-chu$ /index.php [NC,L,QSA]
+
+RewriteRule ^danh-muc/([0-9]*)$ /sanpham.php?iddm=$1 [NC,L,QSA]
+
+ErrorDocument 404 /404.php
